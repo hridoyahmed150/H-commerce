@@ -1,0 +1,132 @@
+[
+  {
+    "id": "p-lumen-01",
+    "name": "Lumen Desk Lamp",
+    "price": 89,
+    "images": [
+      "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=800&q=80"
+    ],
+    "description": "Warm, dimmable LED with a matte aluminum stem and weighted base.",
+    "category": "home",
+    "rating": 4.7,
+    "stock": 42,
+    "createdAt": "2026-01-12T10:00:00.000Z"
+  },
+  {
+    "id": "p-audio-02",
+    "name": "Pulse Wireless Earbuds",
+    "price": 149,
+    "images": [
+      "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=800&q=80"
+    ],
+    "description": "Hybrid ANC, transparency mode, and 28h battery with wireless case.",
+    "category": "electronics",
+    "rating": 4.5,
+    "stock": 120,
+    "createdAt": "2026-02-02T14:30:00.000Z"
+  },
+  {
+    "id": "p-pack-03",
+    "name": "Transit Backpack",
+    "price": 118,
+    "images": [
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&q=80"
+    ],
+    "description": "Weather-sealed shell, laptop sleeve, and magnetic quick-access pocket.",
+    "category": "accessories",
+    "rating": 4.8,
+    "stock": 33,
+    "createdAt": "2025-12-18T09:15:00.000Z"
+  },
+  {
+    "id": "p-brew-04",
+    "name": "AeroPress Kit",
+    "price": 42,
+    "images": [
+      "https://images.unsplash.com/photo-1517668808823-f9f56245a3a4?w=800&q=80"
+    ],
+    "description": "Travel-friendly immersion brewer with stainless filter and tote.",
+    "category": "kitchen",
+    "rating": 4.9,
+    "stock": 210,
+    "createdAt": "2026-03-01T11:00:00.000Z"
+  },
+  {
+    "id": "p-watch-05",
+    "name": "Horizon Sport Watch",
+    "price": 199,
+    "images": [
+      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&q=80"
+    ],
+    "description": "Sapphire glass, 5ATM water resistance, and week-long battery.",
+    "category": "electronics",
+    "rating": 4.4,
+    "stock": 58,
+    "createdAt": "2026-01-28T16:45:00.000Z"
+  },
+  {
+    "id": "p-chair-06",
+    "name": "Contour Task Chair",
+    "price": 349,
+    "images": [
+      "https://images.unsplash.com/photo-1580480055273-228ff5388ef8?w=800&q=80"
+    ],
+    "description": "Adaptive lumbar, breathable mesh, and 4D armrests.",
+    "category": "home",
+    "rating": 4.6,
+    "stock": 18,
+    "createdAt": "2025-11-05T13:20:00.000Z"
+  },
+  {
+    "id": "p-bottle-07",
+    "name": "Hydro Loop Bottle",
+    "price": 36,
+    "images": [
+      "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=800&q=80"
+    ],
+    "description": "Double-wall vacuum insulation with powder-coated finish.",
+    "category": "kitchen",
+    "rating": 4.8,
+    "stock": 300,
+    "createdAt": "2026-02-20T08:00:00.000Z"
+  },
+  {
+    "id": "p-keyboard-08",
+    "name": "Glyph Mechanical Keyboard",
+    "price": 129,
+    "images": [
+      "https://images.unsplash.com/photo-1587829741301-d63d28d96f2a?w=800&q=80"
+    ],
+    "description": "Hot-swap sockets, gasket mount, and dual-mode wireless.",
+    "category": "electronics",
+    "rating": 4.7,
+    "stock": 74,
+    "createdAt": "2026-03-10T19:10:00.000Z"
+  },
+  {
+    "id": "p-plant-09",
+    "name": "Ceramic Planter Duo",
+    "price": 54,
+    "images": [
+      "https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=800&q=80"
+    ],
+    "description": "Hand-glazed stoneware pair with drainage trays.",
+    "category": "home",
+    "rating": 4.3,
+    "stock": 64,
+    "createdAt": "2026-01-03T12:00:00.000Z"
+  },
+  {
+    "id": "p-wallet-10",
+    "name": "Slim RFID Wallet",
+    "price": 48,
+    "images": [
+      "https://images.unsplash.com/photo-1627123424574-724758594e93?w=800&q=80"
+    ],
+    "description": "Full-grain leather, six-card capacity, and RFID shielding.",
+    "category": "accessories",
+    "rating": 4.5,
+    "stock": 95,
+    "createdAt": "2025-12-29T17:40:00.000Z"
+  }
+]

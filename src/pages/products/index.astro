@@ -1,0 +1,23 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import ProductsExplorer from "@/components/commerce/ProductsExplorer";
+import type { ProductSortKey } from "@/types/product.types";
+
+const search = Astro.url.searchParams.get("search") ?? "";
+const category = Astro.url.searchParams.get("category") ?? "all";
+const sortParam = Astro.url.searchParams.get("sort") ?? "newest";
+
+const allowed: ProductSortKey[] = ["newest", "price-asc", "price-desc"];
+const initialSort = allowed.includes(sortParam as ProductSortKey)
+  ? (sortParam as ProductSortKey)
+  : "newest";
+---
+
+<BaseLayout title="Products — H Commerce" description="Browse the H Commerce catalog.">
+  <ProductsExplorer
+    client:load
+    initialSearch={search}
+    initialCategory={category}
+    initialSort={initialSort}
+  />
+</BaseLayout>

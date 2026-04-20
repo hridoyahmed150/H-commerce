@@ -1,0 +1,23 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import LoginForm from "@/components/auth/LoginForm";
+---
+
+<BaseLayout title="Log in — H Commerce" description="Access your H Commerce account (UI only).">
+  <section class="container" style="padding-block: var(--space-8); max-width: 480px;">
+    <div class="stack-md">
+      <div class="pill">Account</div>
+      <h1 style="margin: 0;">Log in</h1>
+      <p class="muted" style="margin: 0;">Demo only: valid emails and passwords come from <code>/src/data/users.json</code>.</p>
+      <div class="card" style="padding: 24px; box-shadow: none; transform: none;">
+        <LoginForm client:load />
+        <p class="muted" style="margin-top: 16px; font-size: 14px;">
+          <a href="/forgot-password">Forgot password?</a>
+        </p>
+      </div>
+      <p class="muted" style="font-size: 14px;">
+        Need an account? <a href="/signup">Create one</a>
+      </p>
+    </div>
+  </section>
+</BaseLayout>

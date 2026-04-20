@@ -1,0 +1,40 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { getProductById, listProducts } from "@/services/products.service";
+import ProductDetailActions from "@/components/commerce/ProductDetailActions";
+
+export async function getStaticPaths() {
+  const products = await listProducts();
+  return products.map((product) => ({ params: { id: product.id } }));
+}
+
+const { id } = Astro.params;
+
+if (!id) {
+  return Astro.redirect("/404");
+}
+
+const product = await getProductById(id);
+
+if (!product) {
+  return Astro.redirect("/404");
+}
+---
+
+<BaseLayout title={`${product.name} — H Commerce`} description={product.description}>
+  <article class="container stack-lg" style="padding-block: var(--space-8);">
+    <div class="pill">{product.category}</div>
+    <div
+      style="display:grid;gap:var(--space-6);grid-template-columns:repeat(auto-fit,minmax(280px,1fr));align-items:start;"
+    >
+      <div class="card" style="padding:0;overflow:hidden;box-shadow:none;transform:none;">
+        <img src={product.images[0]} alt={product.name} style="width:100%;aspect-ratio:4/3;object-fit:cover;" />
+      </div>
+      <div>
+        <h1 style="margin:0 0 var(--space-3);font-size:clamp(2rem,4vw,2.6rem);">{product.name}</h1>
+        <p class="muted" style="margin:0;">{product.description}</p>
+        <ProductDetailActions client:load product={product} />
+      </div>
+    </div>
+  </article>
+</BaseLayout>

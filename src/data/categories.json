@@ -1,0 +1,30 @@
+[
+  {
+    "id": "cat-home",
+    "slug": "home",
+    "name": "Home",
+    "tagline": "Lighting, seating, and calm corners",
+    "image": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=900&q=80"
+  },
+  {
+    "id": "cat-electronics",
+    "slug": "electronics",
+    "name": "Electronics",
+    "tagline": "Audio, wearables, and desk tech",
+    "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=900&q=80"
+  },
+  {
+    "id": "cat-accessories",
+    "slug": "accessories",
+    "name": "Accessories",
+    "tagline": "Carry, organize, move lighter",
+    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=900&q=80"
+  },
+  {
+    "id": "cat-kitchen",
+    "slug": "kitchen",
+    "name": "Kitchen",
+    "tagline": "Brew, sip, and slow mornings",
+    "image": "https://images.unsplash.com/photo-1517668808823-f9f56245a3a4?w=900&q=80"
+  }
+]

@@ -1,0 +1,17 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import ContactForm from "@/components/contact/ContactForm";
+---
+
+<BaseLayout title="Contact — H Commerce" description="Reach the H Commerce team.">
+  <section class="container stack-lg" style="padding-block: var(--space-8); max-width: 640px;">
+    <div class="pill">Contact</div>
+    <h1 style="margin: 0;">Talk with us</h1>
+    <p class="muted" style="margin: 0;">
+      This form is intentionally UI-only. Connect it to your CRM or transactional email provider through a dedicated service when ready.
+    </p>
+    <div class="card" style="padding: 24px; box-shadow: none; transform: none;">
+      <ContactForm client:load />
+    </div>
+  </section>
+</BaseLayout>

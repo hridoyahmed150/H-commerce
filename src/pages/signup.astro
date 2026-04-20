@@ -1,0 +1,20 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import SignupForm from "@/components/auth/SignupForm";
+---
+
+<BaseLayout title="Sign up — H Commerce" description="Create an H Commerce account (UI only).">
+  <section class="container" style="padding-block: var(--space-8); max-width: 520px;">
+    <div class="stack-md">
+      <div class="pill">Account</div>
+      <h1 style="margin: 0;">Create your account</h1>
+      <p class="muted" style="margin: 0;">Phase 1 uses mock responses; the same screens can call a real auth API later.</p>
+      <div class="card" style="padding: 24px; box-shadow: none; transform: none;">
+        <SignupForm client:load />
+      </div>
+      <p class="muted" style="font-size: 14px;">
+        Already have an account? <a href="/login">Log in</a>
+      </p>
+    </div>
+  </section>
+</BaseLayout>

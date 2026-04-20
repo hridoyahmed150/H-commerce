@@ -1,0 +1,8 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import CartPageClient from "@/components/cart/CartPageClient";
+---
+
+<BaseLayout title="Cart — H Commerce" description="Review items in your cart.">
+  <CartPageClient client:load />
+</BaseLayout>

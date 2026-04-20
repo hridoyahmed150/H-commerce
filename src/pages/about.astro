@@ -1,0 +1,20 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="About — H Commerce" description="Learn how the H Commerce frontend is structured.">
+  <section class="container stack-lg" style="padding-block: var(--space-8); max-width: 800px;">
+    <div class="pill">About</div>
+    <h1 style="margin: 0;">Frontend-first storefront</h1>
+    <p class="muted">
+      Astro handles routing, layouts, and SEO. React islands power carts, drawers, filters, and toasts. All catalog, category, and demo user
+      records live under <code>/src/data</code> and are read through small service modules so Phase 2 can swap JSON imports for API clients without
+      redesigning pages.
+    </p>
+    <ul class="muted" style="padding-left: 20px;">
+      <li>Products and categories ship as static JSON today.</li>
+      <li>Cart and wishlist persist with <code>localStorage</code> via dedicated stores.</li>
+      <li>Checkout preview calls <code>order.service</code> to synthesize a demo order object.</li>
+    </ul>
+  </section>
+</BaseLayout>
