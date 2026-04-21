@@ -4,7 +4,11 @@
     "name": "Lumen Desk Lamp",
     "price": 89,
     "images": [
-      "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=800&q=80"
+      "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=800&q=80",
+      "https://images.unsplash.com/photo-1486946255434-2466348c2166?w=800&q=80"
+    ],
+    "videos": [
+      "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
     ],
     "description": "Warm, dimmable LED with a matte aluminum stem and weighted base.",
     "category": "home",
@@ -17,7 +21,8 @@
     "name": "Pulse Wireless Earbuds",
     "price": 149,
     "images": [
-      "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=800&q=80"
+      "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=800&q=80",
+      "https://images.unsplash.com/photo-1545127398-14699f92334b?w=800&q=80"
     ],
     "description": "Hybrid ANC, transparency mode, and 28h battery with wireless case.",
     "category": "electronics",
@@ -30,7 +35,8 @@
     "name": "Transit Backpack",
     "price": 118,
     "images": [
-      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&q=80"
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&q=80",
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&q=80"
     ],
     "description": "Weather-sealed shell, laptop sleeve, and magnetic quick-access pocket.",
     "category": "accessories",
@@ -43,7 +49,8 @@
     "name": "AeroPress Kit",
     "price": 42,
     "images": [
-      "https://images.unsplash.com/photo-1517668808823-f9f56245a3a4?w=800&q=80"
+      "https://images.unsplash.com/photo-1517668808823-f9f56245a3a4?w=800&q=80",
+      "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80"
     ],
     "description": "Travel-friendly immersion brewer with stainless filter and tote.",
     "category": "kitchen",
@@ -56,7 +63,8 @@
     "name": "Horizon Sport Watch",
     "price": 199,
     "images": [
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&q=80"
+      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&q=80",
+      "https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=800&q=80"
     ],
     "description": "Sapphire glass, 5ATM water resistance, and week-long battery.",
     "category": "electronics",
@@ -69,7 +77,8 @@
     "name": "Contour Task Chair",
     "price": 349,
     "images": [
-      "https://images.unsplash.com/photo-1580480055273-228ff5388ef8?w=800&q=80"
+      "https://images.unsplash.com/photo-1580480055273-228ff5388ef8?w=800&q=80",
+      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&q=80"
     ],
     "description": "Adaptive lumbar, breathable mesh, and 4D armrests.",
     "category": "home",
@@ -82,7 +91,8 @@
     "name": "Hydro Loop Bottle",
     "price": 36,
     "images": [
-      "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=800&q=80"
+      "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=800&q=80",
+      "https://images.unsplash.com/photo-1523362628745-0c100150b504?w=800&q=80"
     ],
     "description": "Double-wall vacuum insulation with powder-coated finish.",
     "category": "kitchen",
@@ -95,7 +105,8 @@
     "name": "Glyph Mechanical Keyboard",
     "price": 129,
     "images": [
-      "https://images.unsplash.com/photo-1587829741301-d63d28d96f2a?w=800&q=80"
+      "https://images.unsplash.com/photo-1587829741301-d63d28d96f2a?w=800&q=80",
+      "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?w=800&q=80"
     ],
     "description": "Hot-swap sockets, gasket mount, and dual-mode wireless.",
     "category": "electronics",
@@ -108,7 +119,8 @@
     "name": "Ceramic Planter Duo",
     "price": 54,
     "images": [
-      "https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=800&q=80"
+      "https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=800&q=80",
+      "https://images.unsplash.com/photo-1463320726281-696a485928c7?w=800&q=80"
     ],
     "description": "Hand-glazed stoneware pair with drainage trays.",
     "category": "home",
@@ -121,12 +133,153 @@
     "name": "Slim RFID Wallet",
     "price": 48,
     "images": [
-      "https://images.unsplash.com/photo-1627123424574-724758594e93?w=800&q=80"
+      "https://images.unsplash.com/photo-1627123424574-724758594e93?w=800&q=80",
+      "https://images.unsplash.com/photo-1559551409-dadc959f76b8?w=800&q=80"
     ],
     "description": "Full-grain leather, six-card capacity, and RFID shielding.",
     "category": "accessories",
     "rating": 4.5,
     "stock": 95,
     "createdAt": "2025-12-29T17:40:00.000Z"
+  },
+  {
+    "id": "p-speaker-11",
+    "name": "Echo Mini Speaker",
+    "price": 79,
+    "images": [
+      "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=800&q=80",
+      "https://images.unsplash.com/photo-1543512214-318c7553f230?w=800&q=80"
+    ],
+    "description": "Portable room-filling sound with 12-hour battery life.",
+    "category": "electronics",
+    "rating": 4.4,
+    "stock": 88,
+    "createdAt": "2026-03-12T09:20:00.000Z"
+  },
+  {
+    "id": "p-mat-12",
+    "name": "Flow Yoga Mat",
+    "price": 55,
+    "images": [
+      "https://images.unsplash.com/photo-1599058917212-d750089bc07e?w=800&q=80",
+      "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&q=80"
+    ],
+    "description": "Anti-slip, lightweight mat with alignment guides.",
+    "category": "home",
+    "rating": 4.6,
+    "stock": 106,
+    "createdAt": "2026-02-27T10:10:00.000Z"
+  },
+  {
+    "id": "p-pan-13",
+    "name": "Cast Iron Pan",
+    "price": 65,
+    "images": [
+      "https://images.unsplash.com/photo-1604908177225-1f95f95bb98f?w=800&q=80",
+      "https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=800&q=80"
+    ],
+    "description": "Pre-seasoned skillet built for high-heat cooking.",
+    "category": "kitchen",
+    "rating": 4.7,
+    "stock": 52,
+    "createdAt": "2026-03-15T08:45:00.000Z"
+  },
+  {
+    "id": "p-laptop-14",
+    "name": "Nomad Laptop Sleeve",
+    "price": 44,
+    "images": [
+      "https://images.unsplash.com/photo-1517336714739-489689fd1ca8?w=800&q=80",
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80"
+    ],
+    "description": "Water-resistant sleeve with magnetic flap closure.",
+    "category": "accessories",
+    "rating": 4.3,
+    "stock": 71,
+    "createdAt": "2026-01-20T12:10:00.000Z"
+  },
+  {
+    "id": "p-mouse-15",
+    "name": "Nimbus Wireless Mouse",
+    "price": 59,
+    "images": [
+      "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=800&q=80",
+      "https://images.unsplash.com/photo-1587440871875-191322ee64b0?w=800&q=80"
+    ],
+    "description": "Silent clicks, USB-C charging, and ergonomic shell.",
+    "category": "electronics",
+    "rating": 4.5,
+    "stock": 111,
+    "createdAt": "2026-03-18T13:00:00.000Z"
+  },
+  {
+    "id": "p-rug-16",
+    "name": "Woven Accent Rug",
+    "price": 129,
+    "images": [
+      "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=800&q=80",
+      "https://images.unsplash.com/photo-1493666438817-866a91353ca9?w=800&q=80"
+    ],
+    "description": "Low-pile woven texture with easy-clean finish.",
+    "category": "home",
+    "rating": 4.2,
+    "stock": 29,
+    "createdAt": "2026-03-19T08:20:00.000Z"
+  },
+  {
+    "id": "p-mug-17",
+    "name": "Stoneware Mug Set",
+    "price": 32,
+    "images": [
+      "https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?w=800&q=80",
+      "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=800&q=80"
+    ],
+    "description": "Set of four handmade mugs with speckled glaze.",
+    "category": "kitchen",
+    "rating": 4.8,
+    "stock": 160,
+    "createdAt": "2026-03-21T09:30:00.000Z"
+  },
+  {
+    "id": "p-strap-18",
+    "name": "Canvas Camera Strap",
+    "price": 28,
+    "images": [
+      "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=800&q=80",
+      "https://images.unsplash.com/photo-1510127034890-ba27508e9f1c?w=800&q=80"
+    ],
+    "description": "Comfort-padded strap with quick-lock anchors.",
+    "category": "accessories",
+    "rating": 4.1,
+    "stock": 47,
+    "createdAt": "2026-03-22T10:30:00.000Z"
+  },
+  {
+    "id": "p-lightbar-19",
+    "name": "Ambient Monitor Lightbar",
+    "price": 99,
+    "images": [
+      "https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?w=800&q=80",
+      "https://images.unsplash.com/photo-1517336714739-489689fd1ca8?w=800&q=80"
+    ],
+    "description": "Glare-free desk lighting with touch dimmer.",
+    "category": "electronics",
+    "rating": 4.6,
+    "stock": 39,
+    "createdAt": "2026-03-23T11:45:00.000Z"
+  },
+  {
+    "id": "p-bowl-20",
+    "name": "Minimal Salad Bowl",
+    "price": 24,
+    "images": [
+      "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80",
+      "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=800&q=80"
+    ],
+    "description": "Wide ceramic bowl set for salads and grain meals.",
+    "category": "kitchen",
+    "rating": 4.4,
+    "stock": 190,
+    "createdAt": "2026-03-24T12:15:00.000Z"
   }
 ]

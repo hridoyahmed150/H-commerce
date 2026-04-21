@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import type { ProductSortKey } from "@/types/product.types";
 import { filterProducts } from "@/services/products.service";
 import { listCategoryFilterOptions } from "@/services/categories.service";
@@ -21,6 +21,8 @@ export default function ProductsExplorer({
   const [search, setSearch] = useState(initialSearch);
   const [category, setCategory] = useState(initialCategory);
   const [sort, setSort] = useState<ProductSortKey>(initialSort);
+  const [visibleCount, setVisibleCount] = useState(10);
+  const sentinelRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     setSearch(initialSearch);
@@ -40,15 +42,37 @@ export default function ProductsExplorer({
     () => filterProducts(data, { search, category, sort }),
     [data, search, category, sort],
   );
+  const pagedItems = useMemo(
+    () => visible.slice(0, visibleCount),
+    [visible, visibleCount],
+  );
+
+  useEffect(() => {
+    setVisibleCount(10);
+  }, [search, category, sort]);
+
+  useEffect(() => {
+    const node = sentinelRef.current;
+    if (!node) return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const first = entries[0];
+        if (!first?.isIntersecting) return;
+        setVisibleCount((prev) => {
+          if (prev >= visible.length) return prev;
+          return prev + 10;
+        });
+      },
+      { rootMargin: "240px 0px 240px 0px" },
+    );
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, [visible.length]);
 
   return (
     <div className="container stack-lg" style={{ paddingBlock: "var(--space-8)" }}>
       <header className="stack-md">
-        <div className="pill">Catalog</div>
         <h1 style={{ margin: 0, fontSize: "clamp(2rem, 4vw, 2.6rem)" }}>All products</h1>
-        <p className="muted" style={{ margin: 0, maxWidth: 640 }}>
-          Search, filter, and sort in the browser. Catalog data is loaded from local JSON via the products service.
-        </p>
       </header>
 
       <section
@@ -102,14 +126,14 @@ export default function ProductsExplorer({
       ) : null}
 
       {status === "loading" || status === "idle" ? (
-        <div className="grid-responsive">
+        <div className="products-grid-two">
           {Array.from({ length: 6 }).map((_, index) => (
             <ProductSkeleton key={index} />
           ))}
         </div>
       ) : (
-        <div className="grid-responsive">
-          {visible.map((product) => (
+        <div className="products-grid-two">
+          {pagedItems.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
         </div>
@@ -117,6 +141,9 @@ export default function ProductsExplorer({
 
       {status === "ready" && visible.length === 0 ? (
         <p className="muted">No matches for that combination.</p>
+      ) : null}
+      {status === "ready" && visible.length > 0 ? (
+        <div ref={sentinelRef} style={{ height: 1 }} aria-hidden />
       ) : null}
     </div>
   );

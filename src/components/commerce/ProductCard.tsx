@@ -51,11 +51,8 @@ export default function ProductCard({ product }: Props) {
         <a href={`/product/${product.id}`} style={{ fontWeight: 600, fontSize: 18 }}>
           {product.name}
         </a>
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+        <div>
           <span style={{ fontSize: 20, fontWeight: 700 }}>{formatMoney(product.price)}</span>
-          <span className="muted" style={{ fontSize: 14 }}>
-            ★ {product.rating.toFixed(1)}
-          </span>
         </div>
         <button
           type="button"

@@ -5,6 +5,7 @@ export type Product = {
   name: string;
   price: number;
   images: string[];
+  videos?: string[];
   description: string;
   category: string;
   rating: number;
