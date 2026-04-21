@@ -37,7 +37,7 @@ export default function HomePageClient({ catalog, categories, counts }: Props) {
         <div className="home-section-title">
           <div className="pill">{t("home.categoriesPill")}</div>
           <h2 style={{ margin: 0 }}>{t("home.categoriesTitle")}</h2>
-          <p className="muted" style={{ margin: 0, maxWidth: 640px }}>
+          <p className="muted" style={{ margin: 0, maxWidth: "640px" }}>
             {t("home.categoriesSubtitle")}
           </p>
         </div>
@@ -48,7 +48,7 @@ export default function HomePageClient({ catalog, categories, counts }: Props) {
         <div className="home-section-title">
           <div className="pill">{t("home.featuredPill")}</div>
           <h2 style={{ margin: 0 }}>{t("home.featuredTitle")}</h2>
-          <p className="muted" style={{ margin: 0, maxWidth: 640px }}>
+          <p className="muted" style={{ margin: 0, maxWidth: "640px" }}>
             {t("home.featuredSubtitle")}
           </p>
         </div>
@@ -61,7 +61,7 @@ export default function HomePageClient({ catalog, categories, counts }: Props) {
         <div className="home-section-title">
           <div className="pill">{t("home.latestPill")}</div>
           <h2 style={{ margin: 0 }}>{t("home.latestTitle")}</h2>
-          <p className="muted" style={{ margin: 0, maxWidth: 640px }}>
+          <p className="muted" style={{ margin: 0, maxWidth: "640px" }}>
             {t("home.latestSubtitle")}
           </p>
         </div>

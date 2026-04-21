@@ -15,7 +15,7 @@ export default function HypeProductSlider({ products }: Props) {
       <div className="home-section-title">
         <div className="pill">{t("home.hypePill")}</div>
         <h2 style={{ margin: 0 }}>{t("home.hypeTitle")}</h2>
-        <p className="muted" style={{ margin: 0, maxWidth: 640px }}>
+        <p className="muted" style={{ margin: 0, maxWidth: '640px' }}>
           {t("home.hypeSubtitle")}
         </p>
       </div>
