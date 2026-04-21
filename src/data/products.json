@@ -1,285 +1,227 @@
 [
   {
-    "id": "p-lumen-01",
-    "name": "Lumen Desk Lamp",
-    "price": 89,
+    "id": "hs-merino-crew",
+    "name": "Merino Crew Sweater",
+    "price": 98,
     "images": [
-      "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=800&q=80",
-      "https://images.unsplash.com/photo-1486946255434-2466348c2166?w=800&q=80"
+      "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=800&q=80",
+      "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=800&q=80"
     ],
-    "videos": [
-      "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+    "description": "Fine-gauge merino with ribbed cuffs and a relaxed shoulder.",
+    "category": "knitwear",
+    "rating": 4.8,
+    "stock": 64,
+    "createdAt": "2026-03-22T10:00:00.000Z"
+  },
+  {
+    "id": "hs-selvedge-501",
+    "name": "Selvedge Straight Jean",
+    "price": 138,
+    "images": [
+      "https://images.unsplash.com/photo-1541099649105-f69ad21a3283?w=800&q=80",
+      "https://images.unsplash.com/photo-1582418702059-97ebafb35d09?w=800&q=80"
     ],
-    "description": "Warm, dimmable LED with a matte aluminum stem and weighted base.",
-    "category": "home",
+    "description": "Rigid cotton denim with a clean line from hip to hem.",
+    "category": "denim",
     "rating": 4.7,
     "stock": 42,
-    "createdAt": "2026-01-12T10:00:00.000Z"
-  },
-  {
-    "id": "p-audio-02",
-    "name": "Pulse Wireless Earbuds",
-    "price": 149,
-    "images": [
-      "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=800&q=80",
-      "https://images.unsplash.com/photo-1545127398-14699f92334b?w=800&q=80"
-    ],
-    "description": "Hybrid ANC, transparency mode, and 28h battery with wireless case.",
-    "category": "electronics",
-    "rating": 4.5,
-    "stock": 120,
-    "createdAt": "2026-02-02T14:30:00.000Z"
-  },
-  {
-    "id": "p-pack-03",
-    "name": "Transit Backpack",
-    "price": 118,
-    "images": [
-      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&q=80",
-      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&q=80"
-    ],
-    "description": "Weather-sealed shell, laptop sleeve, and magnetic quick-access pocket.",
-    "category": "accessories",
-    "rating": 4.8,
-    "stock": 33,
-    "createdAt": "2025-12-18T09:15:00.000Z"
-  },
-  {
-    "id": "p-brew-04",
-    "name": "AeroPress Kit",
-    "price": 42,
-    "images": [
-      "https://images.unsplash.com/photo-1517668808823-f9f56245a3a4?w=800&q=80",
-      "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80"
-    ],
-    "description": "Travel-friendly immersion brewer with stainless filter and tote.",
-    "category": "kitchen",
-    "rating": 4.9,
-    "stock": 210,
-    "createdAt": "2026-03-01T11:00:00.000Z"
-  },
-  {
-    "id": "p-watch-05",
-    "name": "Horizon Sport Watch",
-    "price": 199,
-    "images": [
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&q=80",
-      "https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=800&q=80"
-    ],
-    "description": "Sapphire glass, 5ATM water resistance, and week-long battery.",
-    "category": "electronics",
-    "rating": 4.4,
-    "stock": 58,
-    "createdAt": "2026-01-28T16:45:00.000Z"
-  },
-  {
-    "id": "p-chair-06",
-    "name": "Contour Task Chair",
-    "price": 349,
-    "images": [
-      "https://images.unsplash.com/photo-1580480055273-228ff5388ef8?w=800&q=80",
-      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&q=80"
-    ],
-    "description": "Adaptive lumbar, breathable mesh, and 4D armrests.",
-    "category": "home",
-    "rating": 4.6,
-    "stock": 18,
-    "createdAt": "2025-11-05T13:20:00.000Z"
-  },
-  {
-    "id": "p-bottle-07",
-    "name": "Hydro Loop Bottle",
-    "price": 36,
-    "images": [
-      "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=800&q=80",
-      "https://images.unsplash.com/photo-1523362628745-0c100150b504?w=800&q=80"
-    ],
-    "description": "Double-wall vacuum insulation with powder-coated finish.",
-    "category": "kitchen",
-    "rating": 4.8,
-    "stock": 300,
-    "createdAt": "2026-02-20T08:00:00.000Z"
-  },
-  {
-    "id": "p-keyboard-08",
-    "name": "Glyph Mechanical Keyboard",
-    "price": 129,
-    "images": [
-      "https://images.unsplash.com/photo-1587829741301-d63d28d96f2a?w=800&q=80",
-      "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?w=800&q=80"
-    ],
-    "description": "Hot-swap sockets, gasket mount, and dual-mode wireless.",
-    "category": "electronics",
-    "rating": 4.7,
-    "stock": 74,
-    "createdAt": "2026-03-10T19:10:00.000Z"
-  },
-  {
-    "id": "p-plant-09",
-    "name": "Ceramic Planter Duo",
-    "price": 54,
-    "images": [
-      "https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=800&q=80",
-      "https://images.unsplash.com/photo-1463320726281-696a485928c7?w=800&q=80"
-    ],
-    "description": "Hand-glazed stoneware pair with drainage trays.",
-    "category": "home",
-    "rating": 4.3,
-    "stock": 64,
-    "createdAt": "2026-01-03T12:00:00.000Z"
-  },
-  {
-    "id": "p-wallet-10",
-    "name": "Slim RFID Wallet",
-    "price": 48,
-    "images": [
-      "https://images.unsplash.com/photo-1627123424574-724758594e93?w=800&q=80",
-      "https://images.unsplash.com/photo-1559551409-dadc959f76b8?w=800&q=80"
-    ],
-    "description": "Full-grain leather, six-card capacity, and RFID shielding.",
-    "category": "accessories",
-    "rating": 4.5,
-    "stock": 95,
-    "createdAt": "2025-12-29T17:40:00.000Z"
-  },
-  {
-    "id": "p-speaker-11",
-    "name": "Echo Mini Speaker",
-    "price": 79,
-    "images": [
-      "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=800&q=80",
-      "https://images.unsplash.com/photo-1543512214-318c7553f230?w=800&q=80"
-    ],
-    "description": "Portable room-filling sound with 12-hour battery life.",
-    "category": "electronics",
-    "rating": 4.4,
-    "stock": 88,
-    "createdAt": "2026-03-12T09:20:00.000Z"
-  },
-  {
-    "id": "p-mat-12",
-    "name": "Flow Yoga Mat",
-    "price": 55,
-    "images": [
-      "https://images.unsplash.com/photo-1599058917212-d750089bc07e?w=800&q=80",
-      "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&q=80"
-    ],
-    "description": "Anti-slip, lightweight mat with alignment guides.",
-    "category": "home",
-    "rating": 4.6,
-    "stock": 106,
-    "createdAt": "2026-02-27T10:10:00.000Z"
-  },
-  {
-    "id": "p-pan-13",
-    "name": "Cast Iron Pan",
-    "price": 65,
-    "images": [
-      "https://images.unsplash.com/photo-1604908177225-1f95f95bb98f?w=800&q=80",
-      "https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=800&q=80"
-    ],
-    "description": "Pre-seasoned skillet built for high-heat cooking.",
-    "category": "kitchen",
-    "rating": 4.7,
-    "stock": 52,
-    "createdAt": "2026-03-15T08:45:00.000Z"
-  },
-  {
-    "id": "p-laptop-14",
-    "name": "Nomad Laptop Sleeve",
-    "price": 44,
-    "images": [
-      "https://images.unsplash.com/photo-1517336714739-489689fd1ca8?w=800&q=80",
-      "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80"
-    ],
-    "description": "Water-resistant sleeve with magnetic flap closure.",
-    "category": "accessories",
-    "rating": 4.3,
-    "stock": 71,
-    "createdAt": "2026-01-20T12:10:00.000Z"
-  },
-  {
-    "id": "p-mouse-15",
-    "name": "Nimbus Wireless Mouse",
-    "price": 59,
-    "images": [
-      "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=800&q=80",
-      "https://images.unsplash.com/photo-1587440871875-191322ee64b0?w=800&q=80"
-    ],
-    "description": "Silent clicks, USB-C charging, and ergonomic shell.",
-    "category": "electronics",
-    "rating": 4.5,
-    "stock": 111,
-    "createdAt": "2026-03-18T13:00:00.000Z"
-  },
-  {
-    "id": "p-rug-16",
-    "name": "Woven Accent Rug",
-    "price": 129,
-    "images": [
-      "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=800&q=80",
-      "https://images.unsplash.com/photo-1493666438817-866a91353ca9?w=800&q=80"
-    ],
-    "description": "Low-pile woven texture with easy-clean finish.",
-    "category": "home",
-    "rating": 4.2,
-    "stock": 29,
-    "createdAt": "2026-03-19T08:20:00.000Z"
-  },
-  {
-    "id": "p-mug-17",
-    "name": "Stoneware Mug Set",
-    "price": 32,
-    "images": [
-      "https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?w=800&q=80",
-      "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=800&q=80"
-    ],
-    "description": "Set of four handmade mugs with speckled glaze.",
-    "category": "kitchen",
-    "rating": 4.8,
-    "stock": 160,
     "createdAt": "2026-03-21T09:30:00.000Z"
   },
   {
-    "id": "p-strap-18",
-    "name": "Canvas Camera Strap",
-    "price": 28,
+    "id": "hs-wool-coat",
+    "name": "Double-Faced Wool Coat",
+    "price": 289,
     "images": [
-      "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=800&q=80",
-      "https://images.unsplash.com/photo-1510127034890-ba27508e9f1c?w=800&q=80"
+      "https://images.unsplash.com/photo-1539533018447-63fcce2678e3?w=800&q=80",
+      "https://images.unsplash.com/photo-1544022613-e87ca75a784a?w=800&q=80"
     ],
-    "description": "Comfort-padded strap with quick-lock anchors.",
+    "description": "Notched lapels, hidden placket, and a fluid drape.",
+    "category": "outerwear",
+    "rating": 4.9,
+    "stock": 28,
+    "createdAt": "2026-03-20T14:15:00.000Z"
+  },
+  {
+    "id": "hs-linen-shirt",
+    "name": "Relaxed Linen Shirt",
+    "price": 86,
+    "images": [
+      "https://images.unsplash.com/photo-1596755094514-f87a0857f929?w=800&q=80",
+      "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=800&q=80"
+    ],
+    "description": "Breathable linen with a soft collar roll and mother-of-pearl buttons.",
+    "category": "men",
+    "rating": 4.5,
+    "stock": 88,
+    "createdAt": "2026-03-19T11:00:00.000Z"
+  },
+  {
+    "id": "hs-silk-slip",
+    "name": "Bias-Cut Silk Slip Dress",
+    "price": 168,
+    "images": [
+      "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=800&q=80",
+      "https://images.unsplash.com/photo-1515372039744-de8ced544e3a?w=800&q=80"
+    ],
+    "description": "Fluid silk satin with adjustable straps and a clean neckline.",
+    "category": "women",
+    "rating": 4.8,
+    "stock": 36,
+    "createdAt": "2026-03-18T16:40:00.000Z"
+  },
+  {
+    "id": "hs-cashmere-scarf",
+    "name": "Cashmere Travel Scarf",
+    "price": 72,
+    "images": [
+      "https://images.unsplash.com/photo-1520903920243-00d872a2cf1d?w=800&q=80",
+      "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?w=800&q=80"
+    ],
+    "description": "Featherweight cashmere with eyelash fringe ends.",
     "category": "accessories",
-    "rating": 4.1,
-    "stock": 47,
-    "createdAt": "2026-03-22T10:30:00.000Z"
-  },
-  {
-    "id": "p-lightbar-19",
-    "name": "Ambient Monitor Lightbar",
-    "price": 99,
-    "images": [
-      "https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?w=800&q=80",
-      "https://images.unsplash.com/photo-1517336714739-489689fd1ca8?w=800&q=80"
-    ],
-    "description": "Glare-free desk lighting with touch dimmer.",
-    "category": "electronics",
     "rating": 4.6,
-    "stock": 39,
-    "createdAt": "2026-03-23T11:45:00.000Z"
+    "stock": 120,
+    "createdAt": "2026-03-17T08:20:00.000Z"
   },
   {
-    "id": "p-bowl-20",
-    "name": "Minimal Salad Bowl",
-    "price": 24,
+    "id": "hs-wide-trouser",
+    "name": "Pleated Wide Trouser",
+    "price": 118,
     "images": [
-      "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80",
-      "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=800&q=80"
+      "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=800&q=80",
+      "https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=800&q=80"
     ],
-    "description": "Wide ceramic bowl set for salads and grain meals.",
-    "category": "kitchen",
+    "description": "High-rise drape with pressed pleats and a cropped leg option.",
+    "category": "women",
     "rating": 4.4,
-    "stock": 190,
-    "createdAt": "2026-03-24T12:15:00.000Z"
+    "stock": 55,
+    "createdAt": "2026-03-16T12:10:00.000Z"
+  },
+  {
+    "id": "hs-tee-pack",
+    "name": "Supima Tee Duo Pack",
+    "price": 58,
+    "images": [
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&q=80",
+      "https://images.unsplash.com/photo-1583743814966-89362fddb350?w=800&q=80"
+    ],
+    "description": "Two-pack of dense-knit tees with a dry hand feel.",
+    "category": "men",
+    "rating": 4.7,
+    "stock": 200,
+    "createdAt": "2026-03-15T09:00:00.000Z"
+  },
+  {
+    "id": "hs-parka",
+    "name": "Technical Parka",
+    "price": 248,
+    "images": [
+      "https://images.unsplash.com/photo-1544022613-e87ca75a784a?w=800&q=80",
+      "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&q=80"
+    ],
+    "description": "Water-resistant shell with taped seams and packable hood.",
+    "category": "outerwear",
+    "rating": 4.6,
+    "stock": 40,
+    "createdAt": "2026-03-14T15:30:00.000Z"
+  },
+  {
+    "id": "hs-cardigan",
+    "name": "Shawl Collar Cardigan",
+    "price": 112,
+    "images": [
+      "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=800&q=80",
+      "https://images.unsplash.com/photo-1620799140408-ed534dff4497?w=800&q=80"
+    ],
+    "description": "Ribbed shawl collar with horn buttons and patch pockets.",
+    "category": "knitwear",
+    "rating": 4.5,
+    "stock": 70,
+    "createdAt": "2026-03-13T10:45:00.000Z"
+  },
+  {
+    "id": "hs-denim-jacket",
+    "name": "Vintage Wash Trucker",
+    "price": 128,
+    "images": [
+      "https://images.unsplash.com/photo-1576995853123-5a10305d93a0?w=800&q=80",
+      "https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?w=800&q=80"
+    ],
+    "description": "Broken-in indigo with contrast stitching and brass hardware.",
+    "category": "denim",
+    "rating": 4.7,
+    "stock": 48,
+    "createdAt": "2026-03-12T13:20:00.000Z"
+  },
+  {
+    "id": "hs-cap",
+    "name": "Wool 6-Panel Cap",
+    "price": 42,
+    "images": [
+      "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=800&q=80",
+      "https://images.unsplash.com/photo-1521369908679-615bd6f948e6?w=800&q=80"
+    ],
+    "description": "Structured crown with tonal embroidery and leather strap.",
+    "category": "accessories",
+    "rating": 4.3,
+    "stock": 150,
+    "createdAt": "2026-03-11T07:55:00.000Z"
+  },
+  {
+    "id": "hs-blazer",
+    "name": "Unstructured Wool Blazer",
+    "price": 198,
+    "images": [
+      "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=800&q=80",
+      "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&q=80"
+    ],
+    "description": "Soft shoulder, patch pockets, and a breathable half lining.",
+    "category": "men",
+    "rating": 4.8,
+    "stock": 33,
+    "createdAt": "2026-03-10T11:11:00.000Z"
+  },
+  {
+    "id": "hs-knit-dress",
+    "name": "Ribbed Midi Knit Dress",
+    "price": 124,
+    "images": [
+      "https://images.unsplash.com/photo-1515372039744-de8ced544e3a?w=800&q=80",
+      "https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=800&q=80"
+    ],
+    "description": "Vertical rib with side slit and a sculptural neckline.",
+    "category": "women",
+    "rating": 4.6,
+    "stock": 44,
+    "createdAt": "2026-03-09T09:09:00.000Z"
+  },
+  {
+    "id": "hs-puffer",
+    "name": "Lightweight Down Puffer",
+    "price": 218,
+    "images": [
+      "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&q=80",
+      "https://images.unsplash.com/photo-1544022613-e87ca75a784a?w=800&q=80"
+    ],
+    "videos": ["https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"],
+    "description": "Channel-quilted shell with matte finish and packable design.",
+    "category": "outerwear",
+    "rating": 4.7,
+    "stock": 52,
+    "createdAt": "2026-03-08T14:00:00.000Z"
+  },
+  {
+    "id": "hs-cargo",
+    "name": "Tapered Cargo Pant",
+    "price": 108,
+    "images": [
+      "https://images.unsplash.com/photo-1624378515193-66f5f1174b78?w=800&q=80",
+      "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=800&q=80"
+    ],
+    "description": "Cotton twill with articulated knees and hidden zip pockets.",
+    "category": "men",
+    "rating": 4.4,
+    "stock": 61,
+    "createdAt": "2026-03-07T10:30:00.000Z"
   }
 ]

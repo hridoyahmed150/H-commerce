@@ -3,6 +3,7 @@ import type { ProductSortKey } from "@/types/product.types";
 import { filterProducts } from "@/services/products.service";
 import { listCategoryFilterOptions } from "@/services/categories.service";
 import { useProductCatalog } from "@/hooks/useProductCatalog";
+import { useTranslation } from "@/hooks/useTranslation";
 import ProductCard from "@/components/commerce/ProductCard";
 import ProductSkeleton from "@/components/commerce/ProductSkeleton";
 
@@ -17,6 +18,7 @@ export default function ProductsExplorer({
   initialCategory = "all",
   initialSort = "newest",
 }: Props) {
+  const { t } = useTranslation();
   const { status, data, error, refresh } = useProductCatalog();
   const [search, setSearch] = useState(initialSearch);
   const [category, setCategory] = useState(initialCategory);
@@ -36,7 +38,11 @@ export default function ProductsExplorer({
     setSort(initialSort);
   }, [initialSort]);
 
-  const categoryOptions = useMemo(() => listCategoryFilterOptions(), []);
+  const categoryOptions = useMemo(() => {
+    return listCategoryFilterOptions().map((o) =>
+      o.value === "all" ? { ...o, label: t("products.catAll") } : o,
+    );
+  }, [t]);
 
   const visible = useMemo(
     () => filterProducts(data, { search, category, sort }),
@@ -72,7 +78,7 @@ export default function ProductsExplorer({
   return (
     <div className="container stack-lg" style={{ paddingBlock: "var(--space-8)" }}>
       <header className="stack-md">
-        <h1 style={{ margin: 0, fontSize: "clamp(2rem, 4vw, 2.6rem)" }}>All products</h1>
+        <h1 style={{ margin: 0, fontSize: "clamp(2rem, 4vw, 2.6rem)" }}>{t("products.title")}</h1>
       </header>
 
       <section
@@ -87,11 +93,15 @@ export default function ProductsExplorer({
         }}
       >
         <label className="field">
-          <span>Search</span>
-          <input value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Try “lamp” or “kitchen”" />
+          <span>{t("products.search")}</span>
+          <input
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            placeholder={t("products.searchPh")}
+          />
         </label>
         <label className="field">
-          <span>Category</span>
+          <span>{t("products.category")}</span>
           <select value={category} onChange={(e) => setCategory(e.target.value)}>
             {categoryOptions.map((c) => (
               <option key={c.value} value={c.value}>
@@ -101,26 +111,26 @@ export default function ProductsExplorer({
           </select>
         </label>
         <label className="field">
-          <span>Sort</span>
+          <span>{t("products.sort")}</span>
           <select value={sort} onChange={(e) => setSort(e.target.value as ProductSortKey)}>
-            <option value="newest">Newest</option>
-            <option value="price-asc">Price: Low to High</option>
-            <option value="price-desc">Price: High to Low</option>
+            <option value="newest">{t("sort.newest")}</option>
+            <option value="price-asc">{t("sort.priceAsc")}</option>
+            <option value="price-desc">{t("sort.priceDesc")}</option>
           </select>
         </label>
         <div style={{ display: "flex", alignItems: "flex-end" }}>
           <button type="button" className="btn btn-ghost" onClick={() => void refresh()}>
-            Reload catalog
+            {t("products.reload")}
           </button>
         </div>
       </section>
 
       {status === "error" ? (
         <div className="card" style={{ padding: 24, boxShadow: "none", transform: "none" }}>
-          <strong>We couldn’t load products.</strong>
+          <strong>{t("products.loadError")}</strong>
           <p className="muted">{error}</p>
           <button type="button" className="btn btn-primary" onClick={() => void refresh()}>
-            Try again
+            {t("products.tryAgain")}
           </button>
         </div>
       ) : null}
@@ -140,7 +150,7 @@ export default function ProductsExplorer({
       )}
 
       {status === "ready" && visible.length === 0 ? (
-        <p className="muted">No matches for that combination.</p>
+        <p className="muted">{t("products.noMatches")}</p>
       ) : null}
       {status === "ready" && visible.length > 0 ? (
         <div ref={sentinelRef} style={{ height: 1 }} aria-hidden />

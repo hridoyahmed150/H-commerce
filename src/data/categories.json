@@ -1,30 +1,44 @@
 [
   {
-    "id": "cat-home",
-    "slug": "home",
-    "name": "Home",
-    "tagline": "Lighting, seating, and calm corners",
-    "image": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=900&q=80"
+    "id": "cat-men",
+    "slug": "men",
+    "name": "Men",
+    "tagline": "Tailored layers, street cuts, everyday staples",
+    "image": "https://images.unsplash.com/photo-1617137968427-85924c800a22?w=900&q=80"
   },
   {
-    "id": "cat-electronics",
-    "slug": "electronics",
-    "name": "Electronics",
-    "tagline": "Audio, wearables, and desk tech",
-    "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=900&q=80"
+    "id": "cat-women",
+    "slug": "women",
+    "name": "Women",
+    "tagline": "Soft knits, sharp silhouettes, seasonless tones",
+    "image": "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=900&q=80"
+  },
+  {
+    "id": "cat-denim",
+    "slug": "denim",
+    "name": "Denim",
+    "tagline": "Rigid, relaxed, and lived-in blues",
+    "image": "https://images.unsplash.com/photo-1541099649105-f69ad21a3283?w=900&q=80"
+  },
+  {
+    "id": "cat-outerwear",
+    "slug": "outerwear",
+    "name": "Outerwear",
+    "tagline": "Wool coats, puffers, and wind-ready shells",
+    "image": "https://images.unsplash.com/photo-1539533018447-63fcce2678e3?w=900&q=80"
+  },
+  {
+    "id": "cat-knitwear",
+    "slug": "knitwear",
+    "name": "Knitwear",
+    "tagline": "Cashmere blends and chunky ribs",
+    "image": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=900&q=80"
   },
   {
     "id": "cat-accessories",
     "slug": "accessories",
     "name": "Accessories",
-    "tagline": "Carry, organize, move lighter",
-    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=900&q=80"
-  },
-  {
-    "id": "cat-kitchen",
-    "slug": "kitchen",
-    "name": "Kitchen",
-    "tagline": "Brew, sip, and slow mornings",
-    "image": "https://images.unsplash.com/photo-1517668808823-f9f56245a3a4?w=900&q=80"
+    "tagline": "Scarves, caps, and carry essentials",
+    "image": "https://images.unsplash.com/photo-1520903920243-00d872a2cf1d?w=900&q=80"
   }
 ]

@@ -2,19 +2,22 @@
 import BaseLayout from "@/layouts/BaseLayout.astro";
 ---
 
-<BaseLayout title="About — H Commerce" description="Learn how the H Commerce frontend is structured.">
+<BaseLayout title="About — H Studio" description="H Studio — contemporary clothing storefront.">
   <section class="container stack-lg" style="padding-block: var(--space-8); max-width: 800px;">
     <div class="pill">About</div>
-    <h1 style="margin: 0;">Frontend-first storefront</h1>
+    <h1 style="margin: 0;">H Studio</h1>
     <p class="muted">
-      Astro handles routing, layouts, and SEO. React islands power carts, drawers, filters, and toasts. All catalog, category, and demo user
-      records live under <code>/src/data</code> and are read through small service modules so Phase 2 can swap JSON imports for API clients without
-      redesigning pages.
+      <strong>EN:</strong> H Studio is a clothing-focused demo storefront: catalog and categories ship from local JSON, cart and wishlist use
+      browser storage, and the UI supports English + বাংলা with a light/dark theme toggle.
+    </p>
+    <p class="muted">
+      <strong>BN:</strong> এইচ স্টুডিও একটি ক্লোথিং-কেন্দ্রিক ডেমো স্টোরফ্রন্ট — ক্যাটালগ JSON থেকে আসে, কার্ট ও উইশলিস্ট ব্রাউজারে সংরক্ষিত হয়, আর ইন্টারফেসে
+      ইংরেজি ও বাংলা ভাষা এবং লাইট/ডার্ক থিম আছে।
     </p>
     <ul class="muted" style="padding-left: 20px;">
-      <li>Products and categories ship as static JSON today.</li>
-      <li>Cart and wishlist persist with <code>localStorage</code> via dedicated stores.</li>
-      <li>Checkout preview calls <code>order.service</code> to synthesize a demo order object.</li>
+      <li>Products &amp; categories: <code>/src/data</code></li>
+      <li>Cart / wishlist: <code>localStorage</code></li>
+      <li>Contact: Formspree integration on the contact page</li>
     </ul>
   </section>
 </BaseLayout>

@@ -2,76 +2,18 @@
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { listProducts } from "@/services/products.service";
 import { listCategories } from "@/services/categories.service";
-import FeaturedProducts from "@/components/commerce/FeaturedProducts";
-import HomeCategoryGrid from "@/components/home/HomeCategoryGrid";
+import HomePageClient from "@/components/home/HomePageClient";
 
 const catalog = await listProducts();
 const categories = await listCategories();
-const featured = catalog.slice(0, 3);
-const latest = [...catalog]
-  .sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
-  .slice(0, 4);
 const counts = Object.fromEntries(
   categories.map((c) => [c.slug, catalog.filter((p) => p.category === c.slug).length]),
 );
 ---
 
 <BaseLayout
-  title="H Commerce — Home"
-  description="Shop curated home goods, electronics, and accessories — interactive demo storefront."
+  title="H Studio — Home"
+  description="Contemporary clothing — new arrivals, campaigns, and curated categories."
 >
-  <section class="hero container hero-grid">
-    <div>
-      <div class="pill">New season • Free returns on demo orders</div>
-      <h1>Design-forward essentials, ready to ship.</h1>
-      <p>
-        Explore a full storefront experience: rich product pages, search and filters, cart drawer, wishlist, and checkout
-        preview — all powered by local JSON and browser state until you plug in a real API.
-      </p>
-      <div style="display:flex;gap:12px;flex-wrap:wrap;">
-        <a class="btn btn-primary" href="/products">Shop all</a>
-        <a class="btn btn-ghost" href="/products?category=electronics">Shop tech</a>
-      </div>
-    </div>
-    <div class="card" style="padding:24px;box-shadow:none;transform:none;">
-      <div class="stack-md">
-        <strong>Why it feels real</strong>
-        <ul class="muted" style="margin:0;padding-left:18px;">
-          <li>Mock catalog from `/src/data`</li>
-          <li>Cart + wishlist in localStorage</li>
-          <li>Toasts, skeletons, responsive layout</li>
-          <li>Services ready for Phase 2 APIs</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="container stack-lg" style="padding-bottom: var(--space-2);">
-    <div class="home-section-title">
-      <div class="pill">Categories</div>
-      <h2>Shop by room and routine</h2>
-      <p class="muted" style="margin: 0; max-width: 640px;">
-        Each tile links to a filtered catalog view. Counts are computed from `products.json` so they stay in sync with your mock inventory.
-      </p>
-    </div>
-    <HomeCategoryGrid client:visible categories={categories} counts={counts} />
-  </section>
-
-  <section class="container stack-lg">
-    <div class="home-section-title">
-      <div class="pill">Featured</div>
-      <h2>Editor’s picks</h2>
-      <p class="muted" style="margin: 0; max-width: 640px;">Staff favorites from the mock catalog — same cards and interactions as the full listing.</p>
-    </div>
-    <FeaturedProducts client:visible products={featured} />
-  </section>
-
-  <section class="container stack-lg" style="padding-bottom: var(--space-9);">
-    <div class="home-section-title">
-      <div class="pill">Latest</div>
-      <h2>Just landed</h2>
-      <p class="muted" style="margin: 0; max-width: 640px;">Sorted by `createdAt` from your JSON — newest arrivals surface automatically.</p>
-    </div>
-    <FeaturedProducts client:visible products={latest} />
-  </section>
+  <HomePageClient client:load catalog={catalog} categories={categories} counts={counts} />
 </BaseLayout>
